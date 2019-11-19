@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>娃哈哈哈</title>
+    </head>
+    <body>
+        <button onclick="showMobile()"></button>
+        <button onclick="test2()"></button>
+        <button onclick="test3()"></button>
+        <button onclick="test4()"></button>
+        <div id=mobile></div>
+        <div id=userInfo></div>
+        <script>
+        //OC调用js的方法列表
+        function mobileCallBack(msg) {
+            document.getElementById('mobile').innerHTML = '手机号：' + msg.phone//这里可以传参
+        }
+        function userInfoCallBack(msg) {
+            document.getElementById('userInfo').innerHTML = '姓名：' + msg.name + ' 性别：' + msg.sex//这里可以传参
+        }
+        //js调用OC方法列表
+        function showMobile() {
+            window.webkit.messageHandlers.getMobile.postMessage(null)//postMessage()括号内若无参数，则为null，若不传则不响应
+        }
+        function showUserInfo() {
+            
+        }
+        //判断为iOS环境，调用初始化方法
+        if(window.webkit.messageHandlers){
+            showMobile();
+        }
+        </script>
+    </body>
+</html>

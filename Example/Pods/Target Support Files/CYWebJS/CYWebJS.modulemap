@@ -1,0 +1,6 @@
+framework module CYWebJS {
+  umbrella header "CYWebJS-umbrella.h"
+
+  export *
+  module * { export * }
+}
