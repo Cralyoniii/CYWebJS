@@ -19,9 +19,9 @@
 }
 
 - (void)viewDidLoad {
+//    self.i_urlStr = @"http://www.baidu.com"; 加载线上网页
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-//    __weak __typeof__(self) weakSelf = self;
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"查看用户信息" style:(UIBarButtonItemStylePlain) target:self action:@selector(showUserInfo)];
     self.navigationItem.rightBarButtonItem = item;
     
@@ -29,13 +29,14 @@
 
 - (void)setupSubView {
     [super setupSubView];
+    ///本地测试
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"a" ofType:@"html"];
     NSURL *baseURL=[[NSBundle mainBundle]bundleURL];
     [self cy_loadLocalHTML:baseURL withFilePath:filePath];
-    
+
     __weak __typeof__(self) weakSelf = self;
     [self cy_registerFunc:@{@"getMobile":^(id obj) {
-        [weakSelf cy_runJSCriptWithFunc:@"mobileCallBack" Param:@{@"phone":@(0)} IsJsonStr:NO];
+        [weakSelf cy_runJSCriptWithFunc:@"mobileCallBack" Param:@{@"phone":@(10086)} IsJsonStr:NO];
     }}];
 }
 

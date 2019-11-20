@@ -3,16 +3,16 @@
   "version": "0.0.1",
   "summary": "first",
   "description": "gogogo",
-  "homepage": "https://github.com/SSMouseGamer/CYWebJS",
+  "homepage": "https://github.com/Cralyoniii/CYWebJS",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "SSMouseGamer": "1038239369@qq.com"
+    "Cralyon": "1038239369@qq.com"
   },
   "source": {
-    "git": "https://github.com/SSMouseGamer/CYWebJS.git",
+    "git": "https://github.com/Cralyoniii/CYWebJS.git",
     "tag": "0.0.1"
   },
   "platforms": {

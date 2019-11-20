@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/CYWebJS.svg?style=flat)](https://cocoapods.org/pods/CYWebJS)
 [![Platform](https://img.shields.io/cocoapods/p/CYWebJS.svg?style=flat)](https://cocoapods.org/pods/CYWebJS)
 
+## Tip
+UIWebView & JSContext can also solve it,and it's an general solution for H5,but UIWebView occupied memory,most people have gave up it.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -17,7 +20,7 @@ CYWebJS is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'CYWebJS'
+pod 'CYWebJS', :git=> 'https://github.com/Cralyoniii/CYWebJS.git'
 ```
 
 ## Author
