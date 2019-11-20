@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B9166BA2384F0DE00EBA48F /* CYNativeApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9166B92384F0DE00EBA48F /* CYNativeApi.m */; };
 		3B9EF5AA2383B8BF00AB1668 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EF5A92383B8BF00AB1668 /* AppDelegate.m */; };
 		3B9EF5AD2383B8BF00AB1668 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EF5AC2383B8BF00AB1668 /* ViewController.m */; };
 		3B9EF5B22383B8CD00AB1668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B9EF5B12383B8CD00AB1668 /* Assets.xcassets */; };
@@ -18,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		123CB4A63A65EEAEEEF560ED /* Pods-CYWebJS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CYWebJS.debug.xcconfig"; path = "Target Support Files/Pods-CYWebJS/Pods-CYWebJS.debug.xcconfig"; sourceTree = "<group>"; };
+		3B9166B82384F0DE00EBA48F /* CYNativeApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYNativeApi.h; sourceTree = "<group>"; };
+		3B9166B92384F0DE00EBA48F /* CYNativeApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYNativeApi.m; sourceTree = "<group>"; };
 		3B9EF5A52383B8BF00AB1668 /* CYWebJS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYWebJS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9EF5A82383B8BF00AB1668 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B9EF5A92383B8BF00AB1668 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -79,6 +82,8 @@
 				3B9EF5A92383B8BF00AB1668 /* AppDelegate.m */,
 				3B9EF5AB2383B8BF00AB1668 /* ViewController.h */,
 				3B9EF5AC2383B8BF00AB1668 /* ViewController.m */,
+				3B9166B82384F0DE00EBA48F /* CYNativeApi.h */,
+				3B9166B92384F0DE00EBA48F /* CYNativeApi.m */,
 			);
 			path = CYWebJS;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9EF5AD2383B8BF00AB1668 /* ViewController.m in Sources */,
+				3B9166BA2384F0DE00EBA48F /* CYNativeApi.m in Sources */,
 				3B9EF5B82383B8CD00AB1668 /* main.m in Sources */,
 				3B9EF5AA2383B8BF00AB1668 /* AppDelegate.m in Sources */,
 			);

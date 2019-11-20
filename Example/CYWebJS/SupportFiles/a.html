@@ -2,11 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-            <title>娃哈哈哈</title>
+            <title>Test</title>
     </head>
     <body>
         <button onclick="showMobile()"></button>
-        <button onclick="test2()"></button>
+        <button onclick="showUserInfo()"></button>
         <button onclick="test3()"></button>
         <button onclick="test4()"></button>
         <div id=mobile></div>
@@ -24,7 +24,7 @@
             window.webkit.messageHandlers.getMobile.postMessage(null)//postMessage()括号内若无参数，则为null，若不传则不响应
         }
         function showUserInfo() {
-            
+            window.webkit.messageHandlers.getUserInfo.postMessage(null)
         }
         //判断为iOS环境，调用初始化方法
         if(window.webkit.messageHandlers){

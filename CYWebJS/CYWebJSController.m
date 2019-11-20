@@ -13,9 +13,9 @@
 
 @property (nonatomic, strong) UIProgressView *progressView;
 
-@property (nonatomic, strong) CYJSWebView *webView;
-
 @property (nonatomic, strong) NSDictionary *jsFuncDict;
+
+@property (nonatomic, strong) CYJSWebView *webView;
 
 @end
 
@@ -46,8 +46,8 @@
     });
 }
 
+///暂时废弃 - 待完善下拉加载的动画
 - (void)cy_webAddHeaderRefresh {
-    ///暂时废弃
 //    __weak __typeof__(self) weakSelf = self;
 //    [self.webView.scrollView cy_addHeaderRefresh:^{
 //        [weakSelf.webView reload];

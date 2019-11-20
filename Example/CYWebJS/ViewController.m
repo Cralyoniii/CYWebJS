@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import <JavaScriptCore/JavaScriptCore.h>
+#import "CYNativeApi.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) JSContext *context;
 
 @end
 
@@ -24,7 +28,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"查看用户信息" style:(UIBarButtonItemStylePlain) target:self action:@selector(showUserInfo)];
     self.navigationItem.rightBarButtonItem = item;
-    
 }
 
 - (void)setupSubView {
@@ -38,6 +41,7 @@
     [self cy_registerFunc:@{@"getMobile":^(id obj) {
         [weakSelf cy_runJSCriptWithFunc:@"mobileCallBack" Param:@{@"phone":@(10086)} IsJsonStr:NO];
     }}];
+    
 }
 
 @end
